@@ -41,7 +41,7 @@ function Table() {
              {/* Dropdown */}
             <div>
                 <form className="dropdown">
-                    <select className="dropdown_select" onClick={(e) => filter(e)} name="cars" id="cars">
+                    <select className="dropdown_select" onClick={(e) => filter(e)} >
                         <option value="">Status</option>
                         <option value="Completed">Completed</option>
                         <option value="In Progress">In Progress</option>
@@ -55,8 +55,8 @@ function Table() {
                         <th scope="col">#</th>
                         <th scope="col">Company Name</th>
                         <th scope="col">Description</th>
-                        <th scope="col">End data</th>
-                        <th scope="col">Start data</th>
+                        <th scope="col">End date</th>
+                        <th scope="col">Start date</th>
                         <th scope="col">Project code</th>
                         <th scope="col">Project Id</th>
                         <th scope="col">Status</th>
@@ -64,7 +64,7 @@ function Table() {
                     </tr>
                 </thead>
                 <tbody>
-
+        
                     {fiterdata.map((data, key) =>
                         <tr key={key}>
                             <th scope="row">{key + 1}</th>
