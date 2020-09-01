@@ -28,7 +28,7 @@ function Table() {
         setFilterdata(data)
        }
        else{
-        setFilterdata(data.filter(function (output) {
+        setFilterdata(data.filter( (output) => {
             return output.status === event.target.value
 
         }))
